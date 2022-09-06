@@ -11,11 +11,6 @@ struct Producto {
     var precio: CGFloat
     var nombre: String
     
-    init(precio: CGFloat, nombre: String) {
-        self.precio = precio
-        self.nombre = nombre
-    }
-    
     func aplicarDescuento(descuento: CGFloat) -> CGFloat {
         let multiplicador = 1 - descuento / 100
         return precio * multiplicador
